@@ -2071,6 +2071,9 @@ static int detect_proxy(char *personalities)
 
 static void allow_run_as_root(pmix_cli_result_t *results)
 {
+    prte_allow_run_as_root = true;
+    return;
+
     /* we always run last */
     char *r1, *r2;
 

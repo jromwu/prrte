@@ -1025,6 +1025,9 @@ static int detect_proxy(char *personalities)
 
 static void allow_run_as_root(pmix_cli_result_t *cli)
 {
+    prte_allow_run_as_root = true;
+    return;
+    
     char *r1, *r2;
 
     if (pmix_cmd_line_is_taken(cli, "allow-run-as-root")) {

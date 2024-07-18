@@ -1933,7 +1933,7 @@ int prte_plm_base_prted_append_basic_args(int *argc, char ***argv, char *ess, in
         pmix_argv_append(argc, argv, "--leave-session-attached");
     }
     if (prte_allow_run_as_root) {
-        pmix_argv_append(argc, argv, "--allow-run-as-root");
+        // pmix_argv_append(argc, argv, "--allow-run-as-root");
     }
 
     /* the following is not an mca param */
